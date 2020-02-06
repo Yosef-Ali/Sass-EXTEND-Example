@@ -1,1 +1,2 @@
 # Sass-EXTEND-Example
+- @exted 
