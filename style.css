@@ -1,6 +1,88 @@
+.card, aside li, footer p {
+  font-size: 0.9rem;
+  line-height: 1.7em;
+}
+
+h1, h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
 body {
   margin: 0;
   height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  -ms-grid-rows: 4fr 1fr;
+      grid-template-rows: 4fr 1fr;
+      grid-template-areas: 'main posts' 'footer posts';
+  height: 100vh;
+}
+
+section {
+  padding: 7.5em;
+}
+
+section > p {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card {
+  padding: 2em;
+  margin-right: 0.5em;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+aside {
+  padding: 3em;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: posts;
+  background: #005699;
+  color: #99d3ff;
+}
+
+aside a {
+  font-weight: bold;
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+footer {
+  padding: 3em;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: #0090ff;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=style.css.map */
